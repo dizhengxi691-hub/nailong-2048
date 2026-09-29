@@ -4,10 +4,29 @@
 
 ## 当前状态
 
-- 阶段：Web MVP 已完成，等待上传 GitHub 并发布。
+- 阶段：Web MVP 已完成，GitHub 仓库已建立，正在完成 Pages 发布验收。
 - 当前版本：`0.2.0`
 - P0 阻塞：公开发布前需要确认奶龙相关 IP 与素材授权。
-- 下一步：创建 GitHub 仓库、启用 Pages，并在手机真机完成发布地址验收。
+- 下一步：等待 GitHub Pages 工作流完成，并在微信内置浏览器完成发布地址验收。
+
+## 2026-09-29 — GitHub Pages 发布
+
+### 完成
+
+- 创建公开仓库 `dizhengxi691-hub/nailong-2048` 并推送完整源码。
+- 修复 Windows 专用构建依赖导致的 Linux Actions 安装失败。
+- 将 GitHub Pages 发布源切换为 GitHub Actions，避开微信中对原 `chatgpt.site` 地址的 Cloudflare 拦截。
+
+### 验证
+
+- `npm test`：通过，8 条测试全部成功。
+- `npm run build`：通过。
+- GitHub Pages：等待本次发布工作流完成后进行最终地址验收。
+
+### 下一步
+
+- 打开生产链接，检查首屏、素材、滑动操作与离线缓存。
+- 将通过验收的 HTTPS 链接分享到微信进行真机测试。
 
 ## 2026-09-28 — v0.2.0 角色素材更新
 
